@@ -1,14 +1,19 @@
-function takeANumber(line, person){
+var currentTicket = 0;
+
+function takeANumber(person){
   line.push(person)
-  return "Welcome, " + person + ". You are number " + (line.length) + " in line."
+  currentTicket++;
+  return "Welcome, " + person + ". You ticket number is " + currentTicket
 }
+
+//ticket # instead of line size
 
 function nowServing(line){
   if(line.length === 0){
     return "There is nobody waiting to be served!"
   }
   var ans = line[0]
-  line.splice(0,1)
+  line.splice(0,1) //line.shift removes first
   return "Currently serving " + ans + "."
 }
 
