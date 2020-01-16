@@ -2,7 +2,7 @@ var currentTicket = 0;
 
 function takeANumber(person){
   line.push(person)
-  currentTicket++;
+  currentTicket++
   return "Welcome, " + person + ". You ticket number is " + currentTicket
 }
 
