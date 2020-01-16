@@ -28,3 +28,8 @@ function currentLine(line){
   }
   return ans
 }
+
+function lineEmpty(){
+  if(line.length === 0){
+  }
+}
